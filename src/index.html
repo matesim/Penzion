@@ -1,9 +1,15 @@
+---
+layout: main.njk
+title: Galerie
+tags: main
+---
+
 <!DOCTYPE html>
 <html lang="cs">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Penzion u vody (standardní obtížnost)</title>
+	<title>Penzion u vody</title>
 
 	<!-- Google Fonts: Raleway 400, Open Sans 400(i)/700(i) -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -33,11 +39,11 @@
 
 				<nav class="menu">
 					<ul class="menu__list">
-						<li class="menu__item"><a href="index.html" class="menu__link">Úvod</a></li>
-						<li class="menu__item"><a href="pokoje.html" class="menu__link">Pokoje</a></li>
-						<li class="menu__item"><a href="vybaveni.html" class="menu__link">Vybavení</a></li>
-						<li class="menu__item"><a href="galerie.html" class="menu__link">Galerie</a></li>
-						<li class="menu__item"><a href="kontakt.html" class="menu__link">Kontakt</a></li>
+						<li class="menu__item"><a href="/index.html" class="menu__link">Úvod</a></li>
+						<li class="menu__item"><a href="/pokoje.html" class="menu__link">Pokoje</a></li>
+						<li class="menu__item"><a href="/vybaveni.html" class="menu__link">Vybavení</a></li>
+						<li class="menu__item"><a href="/galerie.html" class="menu__link">Galerie</a></li>
+						<li class="menu__item"><a href="/kontakt.html" class="menu__link">Kontakt</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -45,35 +51,56 @@
 			<div class="header__image"></div>
 		</header>
 
-
 		<main class="main">
 		<!-- ↑↑↑ odtud nahoru je vrchní část společná pro všechny stránky na webu -->
 
 
 
-			<!-- Galerie -->
-			<section class="gallery">
-				<h1>Galerie</h1>
+			<!-- O penzionu -->
+			<section class="about">
+				<div class="about__content">
+					<h1>O penzionu u vody</h1>
 
-				<div class="gallery__grid">
-					<img class="gallery__item" src="images/galerie01.jpg" alt="">
-					<img class="gallery__item" src="images/galerie02.jpg" alt="">
-					<img class="gallery__item" src="images/galerie03.jpg" alt="">
-					<img class="gallery__item" src="images/galerie04.jpg" alt="">
-					<img class="gallery__item" src="images/galerie05.jpg" alt="">
-					<img class="gallery__item" src="images/galerie06.jpg" alt="">
-					<img class="gallery__item" src="images/galerie07.jpg" alt="">
-					<img class="gallery__item" src="images/galerie08.jpg" alt="">
-					<img class="gallery__item" src="images/galerie09.jpg" alt="">
-					<img class="gallery__item" src="images/galerie10.jpg" alt="">
-					<img class="gallery__item" src="images/galerie11.jpg" alt="">
-					<img class="gallery__item" src="images/galerie12.jpg" alt="">
-					<img class="gallery__item" src="images/galerie13.jpg" alt="">
-					<img class="gallery__item" src="images/galerie14.jpg" alt="">
-					<img class="gallery__item" src="images/galerie15.jpg" alt="">
+					<p>Náš penzion se nechází na břehu nádherného jezera s epickým výhledem na okolní hory. Máme zde pro vás připravené jak levnější dvojlůžkové pokoje, tak romantická podkrovní apartmá nebo prostorné pokoje pro až 5 osob s&nbsp;výhledem na jezero. Každý pokoj lze v&nbsp;případě potřeby dovybavit jednou nebo dvěma přistýlkami.</p>
+
+					<p>Součástí penzionu je útulná jídelna a venkovní zahrádka, kde si můžete vychutnat speciality naší kuchyně nebo posedět večer u&nbsp;piva nebo vína. Pro aktivní vyžití nabízíme úschovnu kol a lyží, v&nbsp;suterénu je i dobře vybavená posilovna. Pro chvíle relaxace máte k&nbsp;dispozici naši saunu.</p>
+				</div>
+
+				<div class="about__side">
+					<h2>Hodnocení klientů</h2>
+					<div class="testimonial">
+						<div class="testimonial__bubble">
+							<p class="testimonial__score">95 %</p>
+							<p>Naprosto parádní místo s krásným výhledem na jezero a hory. Přátelský a&nbsp;ochotný personál nám zajistil nádhernou dovolenou.</p>
+						</div>
+						<div class="testimonial__name">
+							Jan a Alena Novákovi (srpen 2020)
+						</div>
+					</div>
 				</div>
 			</section>
-			<!-- konec .gallery -->
+			<!-- konec .about -->
+
+
+
+			<!-- ukázka pokojů -->
+			<section class="room-preview grid">
+				<div class="grid__column">
+					<img src="images/room1.jpg" alt="Pokoj 1">
+					<p>Velký pokoj s výhledem na jezero</p>
+				</div>
+
+				<div class="grid__column">
+					<img class="room__image" src="images/room2.jpg" alt="Pokoj 2">
+					<p>Romantické podkrovní apartmá</p>
+				</div>
+
+				<div class="grid__column">
+					<img class="room__image" src="images/room3.jpg" alt="Pokoj 3">
+					<p>Ekonomický pokoj pro dva</p>
+				</div>
+			</section>
+			<!-- konec .rooms -->
 
 
 
