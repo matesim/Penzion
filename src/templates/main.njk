@@ -39,11 +39,6 @@
       </header>
 
       <main>
-        <ul>
-          {%- for post in collections.main -%}
-            <li>{{ post.data.title }}</li>
-          {%- endfor -%}
-        </ul>
         {{ content | safe }}
       </main>
 
